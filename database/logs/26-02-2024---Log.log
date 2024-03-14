@@ -1,0 +1,207 @@
+[2024-02-26 10:16:51,085] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:16:51,086] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:25:04,472] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:25:04,472] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:44:28,946] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:44:28,947] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:44:52,111] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 10:44:52] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-26 10:47:14,127] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 10:47:14] "[31m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 400 -
+[2024-02-26 10:47:21,081] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 10:47:21] "[31m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 400 -
+[2024-02-26 10:47:36,172] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:47:36,172] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:47:54,463] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 10:47:54] "[31m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 400 -
+[2024-02-26 10:48:25,617] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:48:25,617] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:48:29,040] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 10:48:29] "[31m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 400 -
+[2024-02-26 10:49:18,992] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:49:18,992] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:49:19,061] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 152, in post
+    sendEmail = OthersMailing(enquiryType,userFile,filePath,fileName,name,mobile,email,company,reactTime,userRequirements)
+UnboundLocalError: local variable 'fileName' referenced before assignment
+[2024-02-26 10:49:19,067] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 10:49:19] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-26 10:51:57,911] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:51:57,911] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:52:43,326] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 10:52:43,326] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 10:52:47,806] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 10:52:47] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-26 11:14:52,823] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 11:14:52,823] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 11:21:58,070] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 11:21:58,070] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 11:22:01,032] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:22:01] "[31m[1mPOST /chatBot/sendOthersEmail HTTP/1.1[0m" 400 -
+[2024-02-26 11:24:22,566] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:24:22] "[31m[1mPOST /chatBot/sendOthersEmail HTTP/1.1[0m" 400 -
+[2024-02-26 11:24:53,751] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:24:53] "POST /chatBot/sendOthersEmail HTTP/1.1" 200 -
+[2024-02-26 11:26:21,581] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:26:21] "POST /chatBot/sendOthersEmail HTTP/1.1" 200 -
+[2024-02-26 11:53:26,867] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 11:53:26,867] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 11:53:29,662] ERROR from MyIMS: Exception on /chatBot/sendCareerEnquiryEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 227, in post
+    if reactTime == '':
+UnboundLocalError: local variable 'reactTime' referenced before assignment
+[2024-02-26 11:53:29,669] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:53:29] "[35m[1mPOST /chatBot/sendCareerEnquiryEmail HTTP/1.1[0m" 500 -
+[2024-02-26 11:54:01,174] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 11:54:01,174] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 11:54:09,099] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:54:09] "POST /chatBot/sendCareerEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 11:55:44,682] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 11:55:44,682] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 11:55:50,951] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:55:50] "POST /chatBot/sendCareerEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 11:56:49,259] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:56:49] "POST /chatBot/sendOthersEmail HTTP/1.1" 200 -
+[2024-02-26 11:56:57,936] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:56:57] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 11:58:42,578] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 11:58:42,578] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 11:58:48,412] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:58:48] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 11:59:25,913] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 11:59:25] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 12:00:12,010] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 12:00:12] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 12:00:45,992] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 12:00:45] "POST /chatBot/sendOthersEmail HTTP/1.1" 200 -
+[2024-02-26 12:20:35,612] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 12:20:35,612] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 12:21:03,059] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 12:21:03,059] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 12:21:16,573] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 12:21:16] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 12:23:46,284] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 12:23:46,284] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 12:23:55,717] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 12:23:55] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 13:30:22,019] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 13:30:22,019] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 13:30:28,506] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 13:30:28] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 13:31:23,949] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 13:31:23,949] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 13:31:42,207] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 13:31:42] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 14:26:49,041] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 14:26:49,041] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 14:27:03,863] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 14:27:03,863] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 14:27:14,607] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 14:27:14] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 14:29:00,751] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 14:29:00,751] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 14:29:17,227] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 14:29:17,227] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 14:29:44,439] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 14:29:44] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 14:33:06,207] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 14:33:06,207] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 14:33:25,379] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 14:33:25] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 14:44:09,254] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 14:44:09,254] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 14:44:26,500] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 14:44:26] "POST /chatBot/sendProjectEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 14:57:08,945] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 14:57:08,945] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 14:57:23,318] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 14:57:23] "POST /chatBot/sendCareerEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 14:58:14,401] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 14:58:14] "POST /chatBot/sendCareerEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 15:01:30,374] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 15:01:30,374] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 15:01:50,169] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 15:01:50] "POST /chatBot/sendCareerEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 15:10:27,900] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 15:10:27,900] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-26 15:10:50,906] INFO from MyIMS: 192.168.1.58 - - [26/Feb/2024 15:10:50] "POST /chatBot/sendCareerEnquiryEmail HTTP/1.1" 200 -
+[2024-02-26 15:14:09,241] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-26 15:14:09,241] INFO from MyIMS: [33mPress CTRL+C to quit[0m

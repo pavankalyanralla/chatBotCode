@@ -1,0 +1,32 @@
+[2024-03-11 14:41:30,463] WARNING from MyIMS:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2024-03-11 14:41:30,463] INFO from MyIMS:  * Running on http://192.168.250.72:5015/ (Press CTRL+C to quit)
+[2024-03-11 14:42:22,858] ERROR from MyIMS: Exception on /chatBot/summaryOnRequirements [POST]
+Traceback (most recent call last):
+  File "d:\Applications\python\lib\site-packages\flask\app.py", line 1499, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\Applications\python\lib\site-packages\flask\app.py", line 1485, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "d:\Applications\python\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "d:\Applications\python\lib\site-packages\flask\views.py", line 83, in view
+    return self.dispatch_request(*args, **kwargs)
+  File "d:\Applications\python\lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\projectDocuments\TLChatbot\chatBotCodeFromGit\src\server\TLChatBot\projectEnquiry.py", line 77, in post
+    llm = OpenAI(temperature=1.0)
+  File "d:\Applications\python\lib\site-packages\langchain_core\load\serializable.py", line 120, in __init__
+    super().__init__(**kwargs)
+  File "d:\Applications\python\lib\site-packages\pydantic\v1\main.py", line 341, in __init__
+    raise validation_error
+pydantic.v1.error_wrappers.ValidationError: 1 validation error for OpenAI
+__root__
+  Did not find openai_api_key, please add an environment variable `OPENAI_API_KEY` which contains it, or pass `openai_api_key` as a named parameter. (type=value_error)
+[2024-03-11 14:42:23,166] INFO from MyIMS: 192.168.250.72 - - [11/Mar/2024 14:42:23] "[35m[1mPOST /chatBot/summaryOnRequirements HTTP/1.1[0m" 500 -
+[2024-03-11 14:43:25,146] WARNING from MyIMS:  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[2024-03-11 14:43:25,146] INFO from MyIMS:  * Running on http://192.168.250.72:5015/ (Press CTRL+C to quit)
+[2024-03-11 14:43:31,361] INFO from MyIMS: HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+[2024-03-11 14:43:31,372] INFO from MyIMS: 192.168.250.72 - - [11/Mar/2024 14:43:31] "POST /chatBot/summaryOnRequirements HTTP/1.1" 200 -
+[2024-03-11 14:43:35,628] INFO from MyIMS: HTTP Request: POST https://api.openai.com/v1/completions "HTTP/1.1 200 OK"
+[2024-03-11 14:43:35,635] INFO from MyIMS: 192.168.250.72 - - [11/Mar/2024 14:43:35] "POST /chatBot/summaryOnRequirements HTTP/1.1" 200 -

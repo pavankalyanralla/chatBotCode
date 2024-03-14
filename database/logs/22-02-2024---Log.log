@@ -1,0 +1,736 @@
+[2024-02-22 10:35:21,209] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:35:21,209] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:35:33,915] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 168, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:35:33,919] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:35:33] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:36:15,966] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:36:15,967] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:36:18,578] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 169, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:36:18,584] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:36:18] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:37:39,086] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:37:39,087] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:37:41,209] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 169, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:37:41,215] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:37:41] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:50:20,357] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:50:20,357] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:50:22,331] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 170, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:50:22,334] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:50:22] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:52:06,693] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:52:06,694] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:52:09,605] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 174, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:52:09,608] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:52:09] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:52:50,023] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:52:50,024] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:52:52,518] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 176, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:52:52,520] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:52:52] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:53:23,374] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:53:23,374] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:53:25,614] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 176, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:53:25,617] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:53:25] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:53:52,746] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:53:52,746] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:53:54,621] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 176, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:53:54,626] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:53:54] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 10:54:18,001] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 10:54:18,001] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 10:54:21,742] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 176, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 10:54:21,746] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 10:54:21] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:00:36,685] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:00:36,685] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:00:38,975] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 176, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 11:00:38,977] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:00:38] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:01:45,207] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:01:45,207] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:01:49,798] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 174, in post
+    return response
+UnboundLocalError: local variable 'response' referenced before assignment
+[2024-02-22 11:01:49,802] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:01:49] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:10:00,746] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:10:00,746] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:23:58,644] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:23:58,644] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:24:08,698] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 148, in post
+    "userRequirements":userRequirements,"filePath": uploadFilePath,"reactTime":reactTime})
+UnboundLocalError: local variable 'uploadFilePath' referenced before assignment
+[2024-02-22 11:24:08,701] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:24:08] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:27:34,612] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:27:34,613] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:27:37,312] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 150, in post
+    "userRequirements":userRequirements,"filePath": uploadFilePath,"reactTime":reactTime})
+UnboundLocalError: local variable 'uploadFilePath' referenced before assignment
+[2024-02-22 11:27:37,314] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:27:37] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:28:10,266] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:28:10,266] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:28:12,193] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 151, in post
+    "userRequirements":userRequirements,"filePath": uploadFilePath,"reactTime":reactTime})
+UnboundLocalError: local variable 'uploadFilePath' referenced before assignment
+[2024-02-22 11:28:12,196] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:28:12] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:30:33,686] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:30:33,686] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:30:38,167] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 152, in post
+    "userRequirements":userRequirements,"filePath": uploadFilePath,"reactTime":reactTime})
+UnboundLocalError: local variable 'uploadFilePath' referenced before assignment
+[2024-02-22 11:30:38,170] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:30:38] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:31:31,897] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:31:31,897] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:31:33,883] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 152, in post
+    "userRequirements":userRequirements,"filePath": uploadFilePath,"reactTime":reactTime})
+UnboundLocalError: local variable 'uploadFilePath' referenced before assignment
+[2024-02-22 11:31:33,886] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:31:33] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 11:31:52,108] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:31:52,108] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:31:54,207] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:31:54] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 11:32:33,042] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:32:33,042] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:32:36,193] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:32:36] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 11:36:07,232] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 11:36:07,232] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 11:36:17,421] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 11:36:17] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 12:23:45,931] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:23:45,931] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:23:57,186] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:23:57] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 12:24:22,567] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 146, in post
+    uploadFilePath = userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+  File "D:\Applications\lib\site-packages\werkzeug\datastructures.py", line 3002, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\'
+[2024-02-22 12:24:22,570] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:24:22] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:29:39,029] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:29:39,029] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:29:39,315] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 146, in post
+    uploadFilePath = userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+  File "D:\Applications\lib\site-packages\werkzeug\datastructures.py", line 3002, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\'
+[2024-02-22 12:29:39,321] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:29:39] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:30:30,911] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:30:30,911] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:30:32,680] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 146, in post
+    userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+  File "D:\Applications\lib\site-packages\werkzeug\datastructures.py", line 3002, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\'
+[2024-02-22 12:30:32,684] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:30:32] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:31:27,838] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:31:27,838] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:31:30,303] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 146, in post
+    userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+  File "D:\Applications\lib\site-packages\werkzeug\datastructures.py", line 3002, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\'
+[2024-02-22 12:31:30,307] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:31:30] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:32:41,245] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:32:41,246] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:32:47,246] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 146, in post
+    userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+  File "D:\Applications\lib\site-packages\werkzeug\datastructures.py", line 3002, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\'
+[2024-02-22 12:32:47,250] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:32:47] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:33:21,837] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:33:21,837] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:33:25,270] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 146, in post
+    userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+  File "D:\Applications\lib\site-packages\werkzeug\datastructures.py", line 3002, in save
+    dst = open(dst, "wb")
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\'
+[2024-02-22 12:33:25,275] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:33:25] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:33:53,035] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:33:53,035] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:33:55,053] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 140, in post
+    if len(userFile)<0:
+TypeError: object of type 'FileStorage' has no len()
+[2024-02-22 12:33:55,057] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:33:55] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:34:06,745] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:34:06,745] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:34:07,986] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 140, in post
+    if len(userFile)<0:
+TypeError: object of type 'FileStorage' has no len()
+[2024-02-22 12:34:07,989] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:34:07] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:35:03,868] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:35:03,869] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:35:08,749] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 174, in post
+    "userRequirements":userRequirements,"filePath": filePath,"reactTime":reactTime})
+UnboundLocalError: local variable 'filePath' referenced before assignment
+[2024-02-22 12:35:08,755] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:35:08] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:37:42,860] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:37:42,860] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:38:23,120] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:38:23,120] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:38:27,838] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:38:27] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 12:39:12,189] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:39:12] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 12:40:21,066] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:40:21,066] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:40:44,406] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:40:44,406] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:40:49,494] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:40:49] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 12:41:37,462] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:41:37] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 12:44:23,808] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:44:23,808] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:44:25,972] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 135, in post
+    print("lenth....", userFile.content_length)
+AttributeError: 'NoneType' object has no attribute 'content_length'
+[2024-02-22 12:44:25,975] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:44:25] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:45:13,040] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:45:13,040] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:45:17,384] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:45:17] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 12:49:18,805] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:49:18,805] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:49:23,312] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 141, in post
+    if userFile.content_length<1:
+AttributeError: 'list' object has no attribute 'content_length'
+[2024-02-22 12:49:23,317] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:49:23] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:50:08,720] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:50:08,720] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:50:11,651] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 148, in post
+    userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+AttributeError: 'list' object has no attribute 'save'
+[2024-02-22 12:50:11,655] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:50:11] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:55:21,923] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:55:21,923] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:55:28,107] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 135, in post
+    print("lenth....", len(userFile))
+TypeError: object of type 'FileStorage' has no len()
+[2024-02-22 12:55:28,109] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:55:28] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 12:59:41,292] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 12:59:41,292] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 12:59:55,226] ERROR from MyIMS: Exception on /projectEnquiry/sendEmail [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\TLChatBot\projectEnquiry.py", line 135, in post
+    print("lenth....", len(userFile))
+TypeError: object of type 'FileStorage' has no len()
+[2024-02-22 12:59:55,229] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 12:59:55] "[35m[1mPOST /projectEnquiry/sendEmail HTTP/1.1[0m" 500 -
+[2024-02-22 13:00:18,919] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 13:00:18,919] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 13:00:26,588] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 13:00:26] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 13:01:40,329] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 13:01:40] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 13:03:22,013] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 13:03:22,013] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 13:03:30,219] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 13:03:30] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 13:03:56,753] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 13:03:56] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 13:13:48,728] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 13:13:48] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 13:14:14,089] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 13:14:14] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 13:14:35,758] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 13:14:35] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 14:49:51,746] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 14:49:51,746] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 14:49:58,127] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 14:49:58] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 14:50:18,396] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 14:50:18] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 15:03:37,189] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:03:37] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:04:08,090] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:04:08] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:04:14,297] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:04:14] "[31m[1mPOST /projectEnquiry/projectEnquiry HTTP/1.1[0m" 400 -
+[2024-02-22 15:04:36,797] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:04:36] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:07:55,120] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:07:55] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:07:57,977] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:07:57] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:09:56,278] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-22 15:09:56,278] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-22 15:10:00,583] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:10:00] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:11:19,116] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:11:19] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:12:16,913] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:12:16] "POST /projectEnquiry/projectEnquiry HTTP/1.1" 200 -
+[2024-02-22 15:25:43,749] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:25:43] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -
+[2024-02-22 15:27:07,027] INFO from MyIMS: 192.168.1.58 - - [22/Feb/2024 15:27:07] "POST /projectEnquiry/sendEmail HTTP/1.1" 200 -

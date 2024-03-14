@@ -1,0 +1,118 @@
+Create python Virtual Environment
+1. python -m venv venv
+
+Activate vitual venv -- venv\Scripts\activate
+If Error realated to 
+     djangoenv\Scripts\activate : File D:\Training\DjangoTest\djangoenv\Scripts\Activate.ps1 cannot be loaded because running scripts is disabled on this        
+     system. For more information, see about_Execution_Policies at https:/go.microsoft.com/fwlink/?LinkID=135170.
+     At line:1 char:1
+     + djangoenv\Scripts\activate
+     + ~~~~~~~~~~~~~~~~~~~~~~~~~~
+        + CategoryInfo          : SecurityError: (:) [], PSSecurityException
+        + FullyQualifiedErrorId : UnauthorizedAccess
+
+Open powerShell and use below commands
+1.Set-ExecutionPolicy Unrestricted -Scope Process
+2.Set-ExecutionPolicy Unrestricted -Force
+
+
+
+
+steps to create a Django Project
+if we work in cmd then 1 2 3 steps needed otherwise skip it
+1. make a dir and change to dir 
+	mkdir django_project && cd django_project
+
+2. install django in virtual env
+	pipenv install django
+
+3. start the virtual env shell
+	pipenv shell
+
+If we work in vs code start from here.
+
+4. install django in virtual env
+	pip install django
+
+5. create django_project
+	django-admin startproject config .
+
+6. start django server
+	python manage.py runserver
+
+7. resolving migration error
+	python manage.py migrate
+
+8. create a new app in our project
+	python manage.py startapp pages
+
+9. add your app into our django project
+	- open config/settings.py file and include pages into installed_apps
+
+10. to build a page three files are important
+	- urls.py : to specify the urls of views.
+	- views.py : to create functions and classes and specify what data to be loaded in the page.
+	- models.py : to fetch the data from database tables or to create database models.
+	- templates : to specify the styling to data displayed on page.
+
+11. urls files will be multiple based on the apps you create.
+	- for pages need to create new file with urls.py file and add the urls with the views created as specified in config/urls.py file.
+	- include the urls of page app in the confi/urls.py file, so consider the config/urls.py file is the gateway to urls patterns of pages/urls.py file.
+
+12. to make migrations.
+	- python manage.py makemigrations app_name # if we specify app_name then it will create migrations for the app,
+	  so it will be easy to check the migrations for each app. Instead of a single file for all the apps in the application.
+
+13. to push migrations to database
+	- python manage.py migrate app_name
+
+14. to create apps wherever we want in our project. 
+	- python manage.py startapp newapp .\core\newapp\
+
+15. to change the port of the server.
+	- python manage.py runserver 8080
+
+16. to create user in django admin site.
+	- python manage.py createsuperuser (if any error occurs then migrate first and create the user)
+
+17. to show the content of a model instead of model object in django admin portal, we can use string representation for the model.
+	- def __str__(self):
+		return self.name # we can only show one content string of a model.
+	- def __str__(self):
+        	return f"Name: {self.name}, isActive: {self.is_active}" # to show multiple content strings of a model.
+
+18. to show different name instead of field (column) name in a form, we can specify verbose name for that field in a model.
+	- name = models.CharField("verbose_name", max_length=100) # in django admin form while adding new data, it will show verbose_name instead of name.
+	- brand_name : if we specify any field name like this django by default creates space weherever underscore is there in the form like Brand name.
+
+19. to update the time stamp of a record
+	- created_ts = models.DateTimeField(auto_now_add=True) # date time will be automatically added when a record is created.
+	- modified_ts = models.DateTimeField(auto_now=True) # date time will be automatically added when a record is modified.
+
+20. to make a field as non mandatory
+	- description = models.CharField(max_length=100, blank=True) # this will make django admin pannel form of description field as non mandatory and saves the record with empty value in db.
+	- description = models.CharField(max_length=100, blank=True, null=True) # this will make django admin pannel form of description field as non mandatory and saves the record as null in db.
+
+21. for mapping a single tag to a course
+	- tag = models.ForeignKey(Tag) # this will store id of the tag selected from dropdown in course table
+
+22. for mapping multiple tags to a course
+	- tag = models.ManyToManyField() # this will create seperate table to store multiple id's of tags selected from dropdown.
+
+23. to check what django orm is converting python query set to sql query
+	- result = Brand.objects.all().query # specify .query at end will gives the sql command that is converted by django orm.
+							we can use .query only to the query sets that returns data
+
+24. to check the list of queries executed 
+	- from django.db import connection, reset_queries
+	- 	queries = connection.queries # this will list the queries executed in django 
+	-	reset_queries() # this will reset all the queries saves in django.
+	- connection.queries # this will return all queries that will or won't return data unlike .query command.
+
+25. to open django interactive shell
+	- python manage.py shell
+
+26. difference between create and save 
+	- Brand.objects.create(brand_id=1,name="nike") # it will add row into database and if the primary key exists then it will throw Integrity Error
+	- Brand(brand_id=1,name="nike").save() # it will add row into database and if the primary key exists then it will update the values of that primary key.
+

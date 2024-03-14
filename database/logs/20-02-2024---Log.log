@@ -1,0 +1,425 @@
+[2024-02-20 15:14:11,069] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:14:11,069] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:14:16,063] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:14:16] "[33mPOST /langchain HTTP/1.1[0m" 404 -
+[2024-02-20 15:14:43,678] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 16, in post
+    result = model.transcribe(fileName)
+  File "D:\Applications\lib\site-packages\whisper\transcribe.py", line 122, in transcribe
+    mel = log_mel_spectrogram(audio, model.dims.n_mels, padding=N_SAMPLES)
+  File "D:\Applications\lib\site-packages\whisper\audio.py", line 140, in log_mel_spectrogram
+    audio = load_audio(audio)
+  File "D:\Applications\lib\site-packages\whisper\audio.py", line 58, in load_audio
+    out = run(cmd, capture_output=True, check=True).stdout
+  File "D:\Applications\lib\subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "D:\Applications\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "D:\Applications\lib\subprocess.py", line 1440, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+[2024-02-20 15:14:43,682] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:14:43] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:22:36,570] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:22:36,570] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:22:43,911] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    return result
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:22:43,913] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:22:43] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:27:12,901] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:27:12,901] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:27:23,524] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    return result
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:27:23,535] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:27:23] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:27:57,943] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:27:57,943] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:28:05,857] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    return result
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:28:05,861] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:28:05] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:28:53,791] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:28:53,791] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:28:55,428] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:28:55] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 15:29:47,900] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:29:47,900] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:30:35,381] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:30:35,381] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:30:38,689] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:30:38,693] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:30:38] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:32:14,333] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:32:14,333] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:32:17,826] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:32:17,830] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:32:17] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:33:13,838] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:33:13,839] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:33:52,483] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:33:52,483] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:33:56,703] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:33:56,707] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:33:56] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:36:38,726] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:36:38,726] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:36:46,229] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:36:46,233] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:36:46] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:40:57,797] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:40:57,797] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:41:04,386] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:41:04,390] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:41:04] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:42:17,037] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:42:17,037] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:42:21,898] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 29, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:42:21,901] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:42:21] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:44:58,458] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:44:58,458] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:45:01,986] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 21, in post
+    subprocess.run(ffmpeg_command, check=True)
+  File "D:\Applications\lib\subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "D:\Applications\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "D:\Applications\lib\subprocess.py", line 1440, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+[2024-02-20 15:45:01,991] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:45:01] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:46:25,090] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:46:25,090] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:46:30,894] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 21, in post
+    subprocess.run(ffmpeg_command, check=True)
+  File "D:\Applications\lib\subprocess.py", line 503, in run
+    with Popen(*popenargs, **kwargs) as process:
+  File "D:\Applications\lib\subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "D:\Applications\lib\subprocess.py", line 1440, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+FileNotFoundError: [WinError 2] The system cannot find the file specified
+[2024-02-20 15:46:30,898] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:46:30] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:50:31,598] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:50:31,598] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:50:40,661] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 37, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:50:40,673] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:50:40] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:51:32,638] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:51:32,638] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:51:43,026] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:51:43,026] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:54:21,679] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:54:21,679] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 15:54:51,573] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 39, in post
+    if result != None:
+UnboundLocalError: local variable 'result' referenced before assignment
+[2024-02-20 15:54:51,581] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 15:54:51] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 15:59:58,280] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 15:59:58,280] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:00:13,087] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:00:13] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 16:03:41,772] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:03:41,772] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:04:42,976] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:04:42] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 16:05:07,731] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:05:07] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 16:11:32,420] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:11:32,420] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:11:44,227] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:11:44] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 16:16:45,862] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:16:45,862] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:17:38,033] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:17:38,033] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:17:56,389] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:17:56] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 16:20:33,021] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:20:33,021] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:21:06,472] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:21:06] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 16:25:16,510] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:25:16,510] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:25:29,004] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:25:29,004] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:25:49,042] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:25:49,042] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:25:53,756] ERROR from MyIMS: Exception on /langChain [POST]
+Traceback (most recent call last):
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\Applications\lib\site-packages\flask\app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 467, in wrapper
+    resp = resource(*args, **kwargs)
+  File "D:\Applications\lib\site-packages\flask\views.py", line 107, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)
+  File "D:\Applications\lib\site-packages\flask_restful\__init__.py", line 582, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "d:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\langchain.py", line 23, in post
+    output_audio_path = 'D:\chatGPT\POC_GPT\POC_GPT\src\server\langChain\extractedAudiFile\\'+file.filename.wav
+AttributeError: 'str' object has no attribute 'wav'
+[2024-02-20 16:25:53,759] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:25:53] "[35m[1mPOST /langChain HTTP/1.1[0m" 500 -
+[2024-02-20 16:26:20,624] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:26:20,624] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:26:41,040] INFO from MyIMS: error_code=None error_message='The audio file could not be decoded or its format is not supported.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+[2024-02-20 16:26:41,056] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:26:41] "POST /langChain HTTP/1.1" 200 -
+[2024-02-20 16:31:03,480] INFO from MyIMS: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5015
+ * Running on http://192.168.1.58:5015
+[2024-02-20 16:31:03,481] INFO from MyIMS: [33mPress CTRL+C to quit[0m
+[2024-02-20 16:31:17,591] INFO from MyIMS: 192.168.1.58 - - [20/Feb/2024 16:31:17] "POST /langChain HTTP/1.1" 200 -
