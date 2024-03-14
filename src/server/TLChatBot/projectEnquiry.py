@@ -20,7 +20,7 @@ import torch
 
 api_key = ''   # --- working vv
 os.environ['OPENAI_API_KEY'] = api_key
-newAPI = ""
+
 
 
 class ProjectEnquiry(Resource):
