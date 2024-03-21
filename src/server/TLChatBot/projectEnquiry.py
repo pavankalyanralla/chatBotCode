@@ -22,7 +22,6 @@ api_key = ''   # --- working vv
 os.environ['OPENAI_API_KEY'] = api_key
 
 
-
 class ProjectEnquiry(Resource):
     def post(self):
         requestData = request.get_json()
