@@ -134,8 +134,8 @@ class SendProjectEnquiryEmail(Resource):
                 fileName = "None"
             filePath = "None"
             if userFile != "None":
-                userFile.save('D:/projectDocuments/TLChatBot/src/server/TLChatBot/uploadedFiles/' + userFile.filename)
-                filePath = 'D:/projectDocuments/TLChatBot/src/server/TLChatBot/uploadedFiles/' + userFile.filename
+                userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+                filePath = 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\' + userFile.filename
                 fileName = userFile.filename
             sendEmail = ProjectEnquiryMailing(userFile,filePath,fileName,name,mobile,email,company,reactTime,userRequirements)
             if (sendEmail == "Email sent Successfully."):
@@ -336,8 +336,8 @@ class SendCareerEnquiryEmail(Resource):
                 fileName = "None"
             filePath = "None"
             if userFile != "None":
-                userFile.save('D:/projectDocuments/TLChatBot/src/server/TLChatBot/uploadedFiles/' + userFile.filename)
-                filePath = 'D:/projectDocuments/TLChatBot/src/server/TLChatBot/uploadedFiles/' + userFile.filename
+                userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+                filePath = 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\' + userFile.filename
                 fileName = userFile.filename
             sendEmail = CareerEnquiryMailing(userFile,filePath,fileName,name,mobile,email,location,jobLookingFor)
             if (sendEmail == "Email sent Successfully."):
@@ -533,8 +533,8 @@ class SendOthersEmail(Resource):
                 fileName = "None"
             filePath = "None"
             if userFile != "None":
-                userFile.save('D:/projectDocuments/TLChatBot/src/server/TLChatBot/uploadedFiles/' + userFile.filename)
-                filePath = 'D:/projectDocuments/TLChatBot/src/server/TLChatBot/uploadedFiles/' + userFile.filename
+                userFile.save('D:\\chatGPT\\POC_GPT\\POC_GPT\\src\server\\TLChatBot\\uploadedFiles\\' + userFile.filename)
+                filePath = 'D:\\chatGPT\\POC_GPT\\POC_GPT\\src\\server\\TLChatBot\\uploadedFiles\\' + userFile.filename
                 fileName = userFile.filename
             sendEmail = OthersMailing(userFile,filePath,fileName,name,mobile,email,company,userRequirements)
             if (sendEmail == "Email sent Successfully."):
