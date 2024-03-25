@@ -13,6 +13,7 @@ from src.server.errors.errors import errors
 from database.dB_Connect import mysql
 from public.strings.strings import *
 from src.server.TLChatBot.projectEnquiry import *
+from src.server.langChain.langchain import *
 from src.server.suggessionForm.userFormAndSuggestion import *
 from public.logRecordings.logRecordings import LogRecordings
 
@@ -42,6 +43,8 @@ poc.add_resource(SendProjectEnquiryEmail,'/chatBot/sendProjectEnquiryEmail')
 poc.add_resource(SendCareerEnquiryEmail,'/chatBot/sendCareerEnquiryEmail')
 poc.add_resource(SendOthersEmail,'/chatBot/sendOthersEmail')
 
+# langChain/ConvertVideoAudioToText
+poc.add_resource(Langchain,'/langChain/ConvertVideoAudioToText')
 
 mysql.init_app(app)
 
